@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/custom_dialog_gelen_mesaj_istek_toolbar"
+        android:background="@android:color/transparent"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Doktor Chat"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/font"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_hospital"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="end"
+            android:layout_marginRight="10dp"
+            android:id="@+id/custom_dialog_gelen_mesaj_istek_imgkapat"
+            android:layout_height="35dp"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/custom_dialog_gelen_mesaj_istek_linear"
+        android:layout_below="@id/custom_dialog_gelen_mesaj_istek_toolbar"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="5dp"
+            android:background="@color/black"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="MESAJ İSTEKLERİ"
+            android:textColor="#857878"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/custom_dialog_gelen_mesaj_istek_recyclerView"
+        android:scrollbars="none"
+        android:layout_below="@id/custom_dialog_gelen_mesaj_istek_linear"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="4900dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@drawable/custom_dialog_mesaj_gonder_bg"
+            android:layout_centerInParent="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:id="@+id/custom_dialog_mesaj_gonder_editMesaj"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="9dp"
+                android:inputType="textMultiLine"
+                android:gravity="top|left"
+                android:background="@drawable/custom_dialog_mesaj_gonder_edittext"
+                android:layout_height="180dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="150dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/custom_dialog_mesaj_gonder_imgGonder"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:layout_width="90dp"
+                android:padding="15dp"
+                android:background="@drawable/custom_dialog_mesaj_gonder_btn"
+                android:id="@+id/custom_dialog_mesaj_gonder_mesajiptal"
+                android:src="@drawable/ic_close"
+                android:layout_height="90dp"/>
+            <LinearLayout
+                android:layout_width="90dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/custom_dialog_mesaj_gonder_btn"
+                android:gravity="center"
+                android:layout_height="90dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:background="@drawable/custom_dialog_mesaj_gonder_btn"
+                    android:src="@drawable/ic_messagesend"
+                    android:layout_height="45dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Gönder"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="126dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="126dp"
+        android:id="@+id/custom_dialog_mesaj_gönder_profil_imgKullanıcı"
+        app:civ_border_width="3dp"
+        app:civ_border_color="@color/kayıtrenk"/>
+
+</RelativeLayout>

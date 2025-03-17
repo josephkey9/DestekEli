@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="25dp"
+    app:cardElevation="15dp"
+    app:contentPadding="9dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            app:civ_border_width="3dp"
+            app:civ_border_color="@color/black"
+            android:id="@+id/kullanici_item_imgprofile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_toLeftOf="@id/kullanici_image_sagyon"
+            android:layout_toRightOf="@id/kullanici_item_imgprofile"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/kullanici_item_txtKullaniciIsim"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_sag_yon"
+            android:id="@+id/kullanici_image_sagyon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

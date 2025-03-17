@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".HomeActivity"
+    tools:layout_editor_absoluteX="-7dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="67dp"
+        android:text="E-Mail:"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="Şifre"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTxt2NumberPassword"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText2KullaniciAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="Mailinizi Giriniz"
+        android:inputType="text"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/editTxt2NumberPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/editText2KullaniciAdi"
+        app:layout_constraintTop_toBottomOf="@+id/editText2KullaniciAdi" />
+
+    <Button
+        android:id="@+id/btn2GirisYap"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="btnGirisYap"
+        android:text="Giriş Yap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxhatirla" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/destekeli" />
+
+    <TextView
+        android:id="@+id/txtview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="19dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/btn2GirisYap"
+        app:layout_constraintTop_toBottomOf="@+id/btn2GirisYap" />
+
+    <Button
+        android:id="@+id/btnKayitGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="22dp"
+        android:onClick="btnKaytGiris"
+        android:text="Kayıt Ol"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/txtview2"
+        app:layout_constraintTop_toBottomOf="@+id/txtview2" />
+
+    <CheckBox
+        android:id="@+id/checkboxhatirla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="21dp"
+        android:text="Beni Hatırla"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTxt2NumberPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt2NumberPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
